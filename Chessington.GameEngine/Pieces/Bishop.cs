@@ -41,9 +41,7 @@ namespace Chessington.GameEngine.Pieces
                         availablePos.Add(newPos);
                     }
                 }
-            }
-            // if newPos.Row + i > 8 etc etc 
-
+            }         
             return availablePos;
            
         }
