@@ -83,14 +83,12 @@ namespace Chessington.GameEngine.Pieces
                 //availablePos.Add(newPos);
             }
 
-
-
             return availablePos;
         }
 
-        private int Range(int v1, int v2)
-        {
-            throw new NotImplementedException();
-        }
+        //private int Range(int v1, int v2)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
