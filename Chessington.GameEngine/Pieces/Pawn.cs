@@ -21,26 +21,21 @@ namespace Chessington.GameEngine.Pieces
             Square newPos;
 
             Square currentPos = board.FindPiece(this);
-            //'this' is referring to the current Pawn selected?
             var availablePos = new List<Square>();
             
-
             if (Player == Player.White && currentPos.Row == 6)
             {
                 newPos = Square.At(currentPos.Row - 2, currentPos.Col);
                 availablePos.Add(newPos);
                 newPos = Square.At(currentPos.Row - 1, currentPos.Col);
                 availablePos.Add(newPos);
-
             }
 
             if (Player == Player.White && currentPos.Row != 6)
             {
                 newPos = Square.At(currentPos.Row - 1, currentPos.Col);
-
                 availablePos.Add(newPos);
             }
-
 
             if (Player == Player.Black && currentPos.Row == 1)
             {
@@ -48,13 +43,11 @@ namespace Chessington.GameEngine.Pieces
                 availablePos.Add(newPos);
                 newPos = Square.At(currentPos.Row + 1, currentPos.Col);
                 availablePos.Add(newPos);
-
             }
 
             if (Player == Player.Black && currentPos.Row != 1)
             {
                 newPos = Square.At(currentPos.Row + 1, currentPos.Col);
-
                 availablePos.Add(newPos);
             }
 
